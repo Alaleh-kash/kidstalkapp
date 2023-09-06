@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style5.css">
+    <title>choose</title>
+</head>
+<body>
+<div class="v615_1497">
+    <div class="v615_1498"></div>
+    <img class="v615_1499" src="images/v615_1499.png">
+
+    <!-- Hamburger Menu Button -->
+    <div class="menu-button v615_1513" onclick="toggleMenu()">
+        <i class="fas fa-bars menu-icon"></i>
+    </div>
+
+    <!-- Hamburger Menu Container -->
+    <div class="menu-container" id="menu">
+        <!-- Close button -->
+        <div class="close-button" onclick="toggleMenu()">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="menu-list">
+            <li class="menu-item"><a href="#">About Us</a></li>
+            <li class="menu-item"><a href="#">Contact Us</a></li>
+            <li class="menu-item"><a href="#">Services</a></li>
+            <li class="menu-item"><a href="#">Language</a></li>
+        </ul>
+        <div class="v818_475"></div>
+    </div>
+
+    <a href="index1.html" class="v615_1542"></a>
+</div>
+
+<span class="v615_1500">Story</span>
+<span class="v615_1501">Animation</span>
+<span class="v615_1502">Mood</span>
+<span class="v615_1503">Play & Learn</span>
+<span class="v615_1504">Alphabet</span>
+<span class="v615_1505">Shapes & colors</span>
+
+<div class="v615_1517">
+    <!-- Home icon -->
+    <a href="home.html"><i class="fas fa-home white-icon"></i></a>
+    <!-- Like icon -->
+    <a href="like.html"><i class="fas fa-heart white-icon"></i></a>
+    <!-- Search icon -->
+    <a href="search.html"><i class="fas fa-search white-icon"></i></a>
+    <!-- Filter icon -->
+    <a href="filter.html"><i class="fas fa-filter white-icon"></i></a>
+</div>
+
+<div class="v615_1522">
+    <span class="v615_1524" data-original="images/v615_1524.png" data-alt="images/v615_1616.png"></span>
+</div>
+
+<div class="v615_1525">
+    <span class="v615_1527" data-original="images/v615_1527" data-alt="images/v615_1616.png"></span>
+</div>
+<div class="v615_1528">
+    <span class="v615_1530" data-original="images/v615_1530.png" data-alt="images/v615_1760.png"></span>
+</div>
+
+<div class="v615_1532">
+    <span class="v615_1536" data-original="images/v615_1536.png" data-alt="images/v615_1812.png"></span>
+</div>
+
+<div class="v615_1537">
+    <span class="v615_1538" data-original="images/v615_1538.png" data-alt="images/v1_346.png"></span>
+</div>
+
+<div class="v615_1539">
+    <span class="v615_1541" data-original="images/v615_1541.png" data-alt="images/v1_346.png"></span>
+</div>
+
+<!--<div class="v615_1522">
+    <span class="v615_1524 hover-effect"></span>
+</div>
+
+<div class="v615_1525">
+    <span class="v615_1527 hover-effect"></span>
+</div>
+
+
+<div class="v615_1528">
+    <span class="v615_1530 hover-effect"></span>
+</div>
+
+<div class="v615_1532">
+        <div class="v615_1534"></div>
+        <span class="v615_1536 hover-effect"></span>
+    </div>
+</div>
+
+<div class="v615_1537"></div>
+<span class="v615_1538 hover-effect"></span>
+
+<div class="v615_1539">
+    <div class="v615_1540"></div>
+    <span class="v615_1541 hover-effect"></span>
+</div>
+
+</div>-->
+
+
+<script>
+    // JavaScript to toggle the menu
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('menu-open');
+    }
+
+
+const imageElements = document.querySelectorAll('.v615_1524, .v615_1527, .v615_1530, .v615_1536, .v615_1538, .v615_1541');
+
+imageElements.forEach(element => {
+    element.addEventListener('click', function () {
+        const originalImage = element.style.backgroundImage;
+        const altImage = element.getAttribute('data-alt');
+
+        if (originalImage.includes(altImage)) {
+            // If the current image is the alternate one, switch to the original image
+            element.style.backgroundImage = `url(${element.getAttribute('data-original')})`;
+        } else {
+            // If the current image is the original, switch to the alternate image
+            element.style.backgroundImage = `url(${altImage})`;
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>
+
+ 
